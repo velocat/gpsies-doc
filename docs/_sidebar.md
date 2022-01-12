@@ -14,8 +14,8 @@
   - [Редактирование](/tracks/track-edit.md)
   - [Сохранение](/tracks/track-save.md)
 - Инструменты
-  - [конвертер треков](/tools/converter.md)
-  - [сервер высот](/tools/elevation.md)  
+  - [Конвертер треков](/tools/converter.md)
+  - [Сервер высот](/tools/elevation.md)  
 - Маркеры
   - [Добавление](markers/marker-add.md)
   - [Редактирование](markers/marker-edit.md)

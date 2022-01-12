@@ -6,17 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <!-- Theme: Simple -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
+  <!-- Theme: Simple 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">-->
   <style>
     .sidebar, .sidebar a, .sidebar a:active{
       background-color: #dfe5e8;
       /*color: grey;*/
     }
   </style>
+  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer@1.x/dist/plugin.min.css">
+  <!--link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" /-->
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">Please wait...</div>
   <script>
     window.$docsify = {
       logo: '/_media/gpsies100.png',
@@ -43,18 +47,37 @@
       alias: {
         '/': 'README.md'
       },
-      footer: {
-        copy: '<span>Acme &copy; 2020</span>',
-        auth: 'by Me',
-        pre: '<hr/>',
-        style: 'text-align: right;',
-        class: 'className',
-      }
-
+      plugins: [
+        EditOnGithubPlugin.create('https://github.com/velocat/gpsies-doc/edit/main/docs/', 
+          null,
+          function(file) {
+            if (file.indexOf('en') === -1) {
+              return 'редактировать на GitHub'
+            } else {
+              return 'edit on GitHub'
+            }
+          }
+        )
+      ],
     }
+
+    window.$docsify.customPageFooter = {
+      debug: false,                   // for debugging
+      showPoweredBy: true,            // should show powered by docsify at right
+      copyrightYear: '',              // show copyright year, default current year.
+      showCopyright: true,            // set to false to hide default copyright
+      copyright: undefined,           // set this to html string to use custom copyrihgt section
+      copyrightOwnerName: 'velocat',
+      copyrightOwnerLink: 'https://github.com/velocat',
+      copyrightExtra: 'gpsies.ru & velocat.ru',      // any exta text to show below copyright owner section
+      useLocalStorage: true,          // build and store footer in localstorage for quick access
+  }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="https://unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="https://unpkg.com/docsify-themeable/dist/js/docsify-themeable.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer@1.x/dist/plugin.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
 </body>
 </html>
