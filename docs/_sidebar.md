@@ -1,0 +1,16 @@
+
+- Редактор (общее)
+  - [Интерфейс](/)
+  - [Настройки](/main-config.md)
+- Карты
+  - [Настройка карт](/maps/mapsconfig.md)
+- Треки
+  - Создание трека
+    - [Новый трек](/tracks/track-new.md)
+    - [Загрузка](/tracks/track-upload.md)
+  - Редактирование трека
+    - [точки](/tracks/track-points.md)
+    - [сегменты](/tracks/track-segments.md)
+- Маркеры
+  - [Добавление](markers/marker-add.md)
+  - [Редактирование](markers/marker-edit.md)
