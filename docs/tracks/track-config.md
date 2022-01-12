@@ -1,0 +1,1 @@
+![Настройка треков](../_media/tracks-config.jpg)

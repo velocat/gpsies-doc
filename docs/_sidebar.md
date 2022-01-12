@@ -1,16 +1,23 @@
-
-- Редактор (общее)
-  - [Интерфейс](/)
+<!-- markdownlint-disable-next-line first-line-heading -->
+- [Общая информация](/README.md)
+  - [Интерфейс](/interface.md)
   - [Настройки](/main-config.md)
+  - [API-ключи](/api-keys.md)
+  - [Горячие клавиши](/hotkeys.md)
 - Карты
-  - [Настройка карт](/maps/mapsconfig.md)
+  - [Настройка отображения](/maps/mapsconfig.md)
+  - [Персональные карты](/maps/maps-personal.md)
 - Треки
-  - Создание трека
-    - [Новый трек](/tracks/track-new.md)
-    - [Загрузка](/tracks/track-upload.md)
-  - Редактирование трека
-    - [точки](/tracks/track-points.md)
-    - [сегменты](/tracks/track-segments.md)
+  - [Настройки](/tracks/track-config.md)
+  - [Создание](/tracks/track-new.md)
+  - [Загрузка](/tracks/track-upload.md)
+  - [Редактирование](/tracks/track-edit.md)
+  - [Сохранение](/tracks/track-save.md)
+- Инструменты
+  - [конвертер треков](/tools/converter.md)
+  - [сервер высот](/tools/elevation.md)  
 - Маркеры
   - [Добавление](markers/marker-add.md)
   - [Редактирование](markers/marker-edit.md)
+  - [Настройки](markers/marker-config.md)
+  
