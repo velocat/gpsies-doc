@@ -5,12 +5,12 @@
   - [API-ключи](/api-keys.md)
   - [Горячие клавиши](/hotkeys.md)
 - Карты
-  - [Настройка отображения](/maps/mapsconfig.md)
+  - [Карты по-умолчанию](/maps/mapsconfig.md)
   - [Персональные карты](/maps/maps-personal.md)
 - Треки
   - [Настройки](/tracks/track-config.md)
   - [Создание](/tracks/track-new.md)
-  - [Загрузка](/tracks/track-upload.md)
+  - [Загрузка](/tracks/track-download.md)
   - [Редактирование](/tracks/track-edit.md)
   - [Сохранение](/tracks/track-save.md)
 - Инструменты

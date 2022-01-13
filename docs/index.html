@@ -9,15 +9,42 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
   <!-- Theme: Simple 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">-->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css">
   <style>
-    .sidebar, .sidebar a, .sidebar a:active{
-      background-color: #dfe5e8;
-      /*color: grey;*/
+    .sidebar, .sidebar a, .sidebar a:active{ background-color: #dfe5e8; }
+    td:before { display:none }
+    .sidebar-nav{padding-left:15px;}
+    .search .clear-button{
+      border: 0;
+      width: 40px !important;
+      height: 38px; 
+      background-color: transparent;
+      transform: scale(2);
+      text-align: center !important;
+    }
+    .search .results-panel.show{
+      padding: 5px 10px;
+      margin-top: 5px;
+      background-color: ghostwhite;
+    }
+    .search p {
+      font-size: 13px;
+    }
+    img[alt="Image100"] {
+      width: 100px;
+    }
+    img[alt="Image200"] {
+      width: 200px;
+    }
+    img[alt="Image300"] {
+      width: 300px;
+    }
+    img[alt="Image400"] {
+      width: 400px;
     }
   </style>
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer@1.x/dist/plugin.min.css">
-  <!--link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" /-->
 </head>
 <body>
   <div id="app">Please wait...</div>
@@ -42,6 +69,10 @@
         placeholder: {
           '/': 'Поиск',
           '/en': 'Type to search'
+        },
+        noData: {
+          '/': 'Не найдено',
+          '/en/': 'No Results'
         },
       },
       alias: {
@@ -79,5 +110,7 @@
   <script src="https://unpkg.com/docsify-themeable/dist/js/docsify-themeable.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer@1.x/dist/plugin.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <script src="lib/medium-zoom/dist/medium-zoom.min.js"></script>
+  <script src="https://unpkg.com/docsify@4.9/lib/plugins/zoom-image.min.js"></script>
 </body>
 </html>

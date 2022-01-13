@@ -1,7 +1,8 @@
-# Редактор треков
-## GPSies.ru 
+# Редактор треков GPSies.ru
+## Документация
 
-> Документация к [редактору треков GPSies](https://velocat.ru/velo/phpBB3/map.php?mode=editor) v3.2
+> [к редактору треков GPSies v3.2](https://velocat.ru/velo/phpBB3/map.php?mode=editor)
+
 
 - Вы можете перейти к просмотру документации или дополнить/предложить исправления используя репозиторий GitHub:
 
