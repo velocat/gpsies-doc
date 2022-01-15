@@ -1,2 +1,2 @@
 
-![Image600](./_media/main3.1_ru.png)
+![Image600](./_media/interfaceEditor_ru.jpg)

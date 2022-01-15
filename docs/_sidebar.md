@@ -1,7 +1,7 @@
 <!-- markdownlint-disable-next-line first-line-heading -->
 - [Общая информация](/README.md)
   - [Интерфейс](/interface.md)
-  - [Настройки](/main-config.md)
+  - [Настройки редактора](/main-config.md)
   - [API-ключи](/api-keys.md)
   - [Горячие клавиши](/hotkeys.md)
 - Карты
@@ -17,7 +17,6 @@
   - [Конвертер треков](/tools/converter.md)
   - [Сервер высот](/tools/elevation.md)  
 - Маркеры
-  - [Добавление](markers/marker-add.md)
-  - [Редактирование](markers/marker-edit.md)
+  - [Добавить/Изменить](markers/marker-add.md)
   - [Настройки](markers/marker-config.md)
   
