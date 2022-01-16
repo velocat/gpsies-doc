@@ -4,9 +4,11 @@
   - [Настройки редактора](/main-config.md)
   - [API-ключи](/api-keys.md)
   - [Горячие клавиши](/hotkeys.md)
+  - [Хранилище треков](/storage.md)
 - Карты
   - [Карты по-умолчанию](/maps/mapsconfig.md)
   - [Персональные карты](/maps/maps-personal.md)
+  - [Панорамы](/maps/pano.md)
 - Треки
   - [Настройки](/tracks/track-config.md)
   - [Создание и загрузка](/tracks/track-new.md)
@@ -26,4 +28,3 @@
   - [Задачи (TODO)](/todo.md)
   - [Сообщить об ошибке](/bugs.md)
   - [Сервисы и ресурсы](/thirdpart.md)
-  
