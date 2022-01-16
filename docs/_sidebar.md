@@ -11,13 +11,19 @@
   - [Настройки](/tracks/track-config.md)
   - [Создание и загрузка](/tracks/track-new.md)
   - [Редактирование и сохранение](/tracks/track-edit.md)
-  - [Сегменты](/tracks/track-segments.md)
+  - [Фрагменты](/tracks/track-segments.md)
 - Инструменты
   - [Блок инструментов](/tools/tools-editor.md)
   - [Конвертер треков](/tools/converter.md)
   - [Сервер высот](/tools/elevation.md)
-  - [Маршрутизация](/tools/routing.md)  
+  - [Маршрутизация](/tools/routing.md)
+  - [Статистика](/tools/stat.md)  
 - Маркеры
   - [Добавить/Изменить](markers/marker-add.md)
   - [Настройки](markers/marker-config.md)
+- Дополнительно
+  - [Список изменений](/changelog.md)
+  - [Задачи (TODO)](/todo.md)
+  - [Сообщить об ошибке](/bugs.md)
+  - [Сервисы и ресурсы](/thirdpart.md)
   
