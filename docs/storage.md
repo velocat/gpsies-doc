@@ -23,12 +23,12 @@
 
 Скриншоты:
 
-![Image400](../_media/storage/view.jpg) ![Image400](../_media/storage/view1.jpg) ![Image400](../_media/storage/view2.jpg) ![Image400](../_media/storage/view3.jpg)  
+![Image400](/_media/storage/view.jpg) ![Image400](/_media/storage/view1.jpg) ![Image400](/_media/storage/view2.jpg) ![Image400](/_media/storage/view3.jpg)  
 
-![Image400](../_media/storage/widget.jpg)
+![Image400](/_media/storage/widget.jpg)
 
 ### Редактирование
 
 Скриншоты:
 
-![Image400](../_media/storage/edit1.jpg) ![Image400](../_media/storage/edit2.jpg)
+![Image400](/_media/storage/edit1.jpg) ![Image400](/_media/storage/edit2.jpg)
