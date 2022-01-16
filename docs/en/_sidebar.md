@@ -1,0 +1,21 @@
+<!-- markdownlint-disable-next-line first-line-heading -->
+- [General information](/en/README.md)
+  - [Interface](/en/interface.md)
+  - [Editor Settings](/en/main-config.md)
+  - [API keys](/en/api-keys.md)
+  - [Keyboard Shortcuts](/en/hotkeys.md)
+- Maps
+  - [General](/en/maps/mapsconfig.md)
+  - [Personal](/en/maps/maps-personal.md)
+- Tracks
+  - [Settings](/en/tracks/track-config.md)
+  - [Create](/en/tracks/track-new.md)
+  - [Downloads](/en/tracks/track-download.md)
+  - [Edit](/en/tracks/track-edit.md)
+  - [Save](/en/tracks/track-save.md)
+- Tools
+  - [Track converter](/en/tools/converter.md)
+  - [Elevation server](/en/tools/elevation.md)  
+- Markers
+  - [Add/Edit](/en/marker/marker-add.md)
+  - [Settings](/en/markers/marker-config.md)

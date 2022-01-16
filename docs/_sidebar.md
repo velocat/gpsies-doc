@@ -9,13 +9,14 @@
   - [Персональные карты](/maps/maps-personal.md)
 - Треки
   - [Настройки](/tracks/track-config.md)
-  - [Создание](/tracks/track-new.md)
-  - [Загрузка](/tracks/track-download.md)
-  - [Редактирование](/tracks/track-edit.md)
-  - [Сохранение](/tracks/track-save.md)
+  - [Создание и загрузка](/tracks/track-new.md)
+  - [Редактирование и сохранение](/tracks/track-edit.md)
+  - [Сегменты](/tracks/track-segments.md)
 - Инструменты
+  - [Блок инструментов](/tools/tools-editor.md)
   - [Конвертер треков](/tools/converter.md)
-  - [Сервер высот](/tools/elevation.md)  
+  - [Сервер высот](/tools/elevation.md)
+  - [Маршрутизация](/tools/routing.md)  
 - Маркеры
   - [Добавить/Изменить](markers/marker-add.md)
   - [Настройки](markers/marker-config.md)

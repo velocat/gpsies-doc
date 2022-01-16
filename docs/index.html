@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css" />
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-footer@1.x/dist/plugin.min.css">
@@ -14,6 +16,14 @@
   <link rel="stylesheet" href="lib/fontawesome-free-5.15.4/css/regular.css" />
   <link rel="stylesheet" href="lib/fontawesome-free-5.15.4/css/solid.css" /> 
   <style>
+    body {
+        font-family: Lato,proxima-nova,Helvetica Neue,Arial,sans-serif;
+        font-weight: 400;
+        color: #404040;
+    }
+    .markdown-section > :not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) code {
+      font-size: 0.9rem;
+    }
     .sidebar, .sidebar a, .sidebar a:active{ background-color: #dfe5e8; }
     td:before { display:none }
     .sidebar-nav{padding-left:15px;}
@@ -48,6 +58,18 @@
     img[alt="Image500"] {
       width: 500px;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+    h1, h2, h3, h4, h5, h6, legend{
+      font-family: Roboto Slab,ff-tisa-web-pro,Georgia,Arial,sans-serif;
+    }
+    .app-nav>ul>li{
+      margin: 8px;
+    }
+    p {
+      line-height: 24px;
+      font-size: 14px;
+      margin: 0 0 24px;
+    }
     /*h3 .anchor span{
       color:blue !important;
     }
@@ -58,22 +80,20 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 </head>
 <body>
-  <!--nav>
-    <a href="#/">RU</a>
-    <a href="#/en/">EN</a>
-  </nav-->
   <div id="app">Please wait...</div>
   <script>
     window.$docsify = {
       logo: '/_media/gpsies100.png',
       coverpage: "coverpage.md",
       loadSidebar: "_sidebar.md",
+      loadNavbar: true,
       auto2top: true,
       maxLevel: 1,
-      subMaxLevel: 4,
+      subMaxLevel: 3,
       autoHeader: true,
       mergeNavbar: true,
       //hideSidebar: true,
+      fallbackLanguages: ['en', 'fr', 'de'],
       name: 'GPSies редактор',
       repo: 'https://github.com/velocat/gpsies-doc',
       notFoundPage: {
@@ -93,18 +113,45 @@
       alias: {
         '/': 'README.md'
       },
-      plugins: [
+      'flexible-alerts': {
+        style: 'flat',
+        note: {
+          label: {
+            '/': 'Примечание',
+            '/en/': 'Note'
+          }
+        },
+        tip: {
+          label: {
+            '/': 'Совет',
+            '/en/': 'Tip'
+          }
+        },
+        warning: {
+          label: {
+            '/': 'Предупреждение',
+            '/en/': 'Warning'
+          }
+        },
+        attention: {
+          label: {
+            '/': 'Внимание!',
+            '/en/': 'Attention'
+          }
+        }
+      },
+      /*plugins: [
         EditOnGithubPlugin.create('https://github.com/velocat/gpsies-doc/edit/main/docs/', 
           null,
           function(file) {
             if (file.indexOf('en') === -1) {
-              return 'редактировать на GitHub'
+              return ':fa fa-edit fa-lg:'
             } else {
-              return 'edit on GitHub'
+              return ':fa fa-edit: - GitHub'
             }
           }
         )
-      ],
+      ],*/
       //timeUpdater: {
       //  text: "---\n*отредактировано: {docsify-updated}*", //"> Last Modify: {docsify-updated}"
       //  formatUpdated: "{DD}-{MM}-{YYYY}",
@@ -132,6 +179,8 @@
   <script src="lib/medium-zoom/dist/medium-zoom.min.js"></script>
   <script src="lib/plugins/zoom-image.min.js"></script>
   <script src="lib/plugins/docsify-fontawesome.min.js"></script>
+  <!-- https://github.com/fzankl/docsify-plugin-flexible-alerts -->
+  <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
   <!--script src="https://cdn.jsdelivr.net/npm/docsify-updated@1/src/time-updater.min.js"></script-->
 </body>
 </html>
