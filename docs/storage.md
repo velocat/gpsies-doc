@@ -1,6 +1,6 @@
 ### Общая информация
 
-Данный редактор являетя составляющей частью [Хранилища треков GPSies.ru](https://velocat.ru/velo/phpBB3/map.php)
+Данный редактор являетcя составляющей частью [Хранилища треков GPSies.ru](https://velocat.ru/velo/phpBB3/map.php)
 
 >Возможности GPsies:
 >
