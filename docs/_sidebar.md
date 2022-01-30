@@ -14,9 +14,11 @@
   - [Создание и загрузка](/tracks/track-new.md)
   - [Редактирование и сохранение](/tracks/track-edit.md)
   - [Фрагменты](/tracks/track-segments.md)
+  - [Заметки](/tracks/track-note.md)
 - Инструменты
   - [Блок инструментов](/tools/tools-editor.md)
   - [Конвертер треков](/tools/converter.md)
+  - [Оптимизатор](/tools/optimizer.md)
   - [Сервер высот](/tools/elevation.md)
   - [Маршрутизация](/tools/routing.md)
   - [Статистика](/tools/stat.md)  
