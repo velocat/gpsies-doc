@@ -1,7 +1,7 @@
 <!-- markdownlint-disable-next-line first-line-heading -->
 Go to the section :fas fa-cog:`Settings` :fas fa-angle-right:`Editing Settings`
 
-![main-config](../_media/main-config.jpg)
+![main-config](../_media/main-config-new.jpg)
 
 ?>If the local [save settings](/en/main-config.md?id=Saving-settings), all the following settings of the current session will be automatically applied when you next log in to the editor in this browser, otherwise the default settings will be applied (as shown in the picture).
 

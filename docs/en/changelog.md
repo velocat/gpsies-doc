@@ -1,7 +1,7 @@
 <!-- markdownlint-disable-next-line first-line-heading -->
 ### General data for the editor and storage
 
-### vers 3.2.1 02.06.2022
+#### vers 3.2.1 02.06.2022
 
 - [NEW] Added the ability to enable the "guide line" for the cursor in the track drawing mode in the settings
 - [NEW] Added the ability to include a block of information (distance, direction, etc.) above the cursor in edit mode
