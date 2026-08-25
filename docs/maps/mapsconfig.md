@@ -71,6 +71,8 @@
 
 | тип слоя | превью | по-умолчанию
 | ---------| :----: | :----: |
+|Heatmap|![Image100](../_media/maps/heatmap.png)| :heavy_check_mark:
+|Треки Gpsies|![Image100](../_media/maps/usermap.png)| :heavy_check_mark:
 |Geocashing|![Image100](../_media/maps/Geocash.jpg)| :heavy_check_mark:
 |HikeBike.HillShading|![Image100](../_media/maps/HillShading.jpg)| :heavy_check_mark:
 |OpenRailwayMap|![Image100](../_media/maps/Railway.jpg)| :heavy_check_mark:
