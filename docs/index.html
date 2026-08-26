@@ -81,6 +81,11 @@
     h1 .anchor span{
       color: #42b983 !important;
     }*/
+    /* Автоматическая покраска тегов в документации Велокэта */
+    code:contains("[NEW]") { color: #2e7d32 !important; background: #e8f5e9; font-weight: bold; }
+    code:contains("[FIX]") { color: #c62828 !important; background: #ffebee; font-weight: bold; }
+    code:contains("[UPD]") { color: #1565c0 !important; background: #e3f2fd; font-weight: bold; }
+
   </style>
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 </head>
