@@ -170,21 +170,8 @@
           }
         }
       },
-      plugins: [
-            // Плагин авто-раскраски ченджлога Велокэта
-          function(hook, vm) {
-              hook.doneEach(function() {
-                  // Находим все элементы кода на странице документации
-                  document.querySelectorAll('code').forEach(function(el) {
-                      var txt = el.textContent.trim();
-                      if (txt === '[NEW]') { el.className = 'badge-new'; el.textContent = 'NEW'; }
-                      if (txt === '[FIX]') { el.className = 'badge-fix'; el.textContent = 'FIX'; }
-                      if (txt === '[UPD]') { el.className = 'badge-upd'; el.textContent = 'UPD'; }
-                  });
-              });
-          }
-
-        /*EditOnGithubPlugin.create('https://github.com/velocat/gpsies-doc/edit/main/docs/', 
+      /*plugins: [
+        EditOnGithubPlugin.create('https://github.com/velocat/gpsies-doc/edit/main/docs/', 
           null,
           function(file) {
             if (file.indexOf('en') === -1) {
@@ -194,12 +181,12 @@
             }
           }
         )
-      ],*/
+      ],
       //timeUpdater: {
       //  text: "---\n*отредактировано: {docsify-updated}*", //"> Last Modify: {docsify-updated}"
       //  formatUpdated: "{DD}-{MM}-{YYYY}",
       //},
-    }
+    }*/
 
     window.$docsify.customPageFooter = {
       debug: false,                   // for debugging
