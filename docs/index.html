@@ -81,20 +81,25 @@
     h1 .anchor span{
       color: #42b983 !important;
     }*/
-    /* Красивые цветные плашки для авто-раскраски ченджлога */
-    .badge-changelog {
-        display: inline-block !important;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif !important;
-        font-size: 11px !important;
-        font-weight: bold !important;
-        padding: 2px 6px !important;
-        border-radius: 3px !important;
-        margin-right: 4px !important;
-        text-transform: uppercase !important;
-    }
-    .badge-new { color: #1b5e20 !important; background-color: #e8f5e9 !important; border: 1px solid #c8e6c9 !important; }
-    .badge-fix { color: #b71c1c !important; background-color: #ffebee !important; border: 1px solid #ffcdd2 !important; }
-    .badge-upd { color: #0d47a1 !important; background-color: #e3f2fd !important; border: 1px solid #bbdefb !important; }
+	/* Красивые цветные плашки одинаковой фиксированной ширины */
+	.badge-changelog {
+	    display: inline-block !important; /* Обязательно для работы width */
+	    width: 45px !important;           /* Жесткая одинаковая ширина для всех бейджей */
+	    text-align: center !important;    /* Центрируем буквы внутри плашки */
+	    
+	    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif !important;
+	    font-size: 11px !important;
+	    font-weight: bold !important;
+	    padding: 2px 0 !important;        /* Обнуляем боковые отступы, так как ширина теперь фиксированная */
+	    border-radius: 3px !important;
+	    margin-right: 6px !important;
+	    text-transform: uppercase !important;
+	}
+	
+	/* Цвета и рамки остаются вашими родными */
+	.badge-new { color: #1b5e20 !important; background-color: #e8f5e9 !important; border: 1px solid #c8e6c9 !important; }
+	.badge-fix { color: #b71c1c !important; background-color: #ffebee !important; border: 1px solid #ffcdd2 !important; }
+	.badge-upd { color: #0d47a1 !important; background-color: #e3f2fd !important; border: 1px solid #bbdefb !important; }
   </style>
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 </head>
