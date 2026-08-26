@@ -87,25 +87,6 @@
       Docsify превратит их в HTML-теги <code>. 
       Эти правила найдут их по точному тексту и нативно раскрасят в нужные цвета!
     */
-    code {
-        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-        padding: 2px 6px !important;
-        border-radius: 3px !important;
-    }
-    
-    /* Зеленый бейдж для новинок */
-    code[class*="new" i], code:empty::before, code:not([class]):html {
-        /* Чтобы не привязываться к багам парсеров, сделаем универсальный хак.
-           В Docsify проще всего добавить класс или использовать селектор по тексту.
-           Так как чистый CSS не умеет искать по тексту, мы добавим в index.html 
-           микро-скрипт автоматической раздачи классов бейджам! */
-    }
-    
-    /* Идеальный пуленепробиваемый вариант для Docsify: */
-    .badge-new { color: #1b5e20 !important; background-color: #e8f5e9 !important; font-weight: bold; border: 1px solid #c8e6c9; }
-    .badge-fix { color: #b71c1c !important; background-color: #ffebee !important; font-weight: bold; border: 1px solid #ffcdd2; }
-    .badge-upd { color: #0d47a1 !important; background-color: #e3f2fd !important; font-weight: bold; border: 1px solid #bbdefb; }
-
   </style>
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 </head>
