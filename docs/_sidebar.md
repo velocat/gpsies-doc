@@ -8,8 +8,7 @@
 - Карты
   - [Карты по-умолчанию](/maps/mapsconfig.md)
   - [Персональные карты](/maps/maps-personal.md)
-  - [Панорамы](/maps/pano.md)
-  - [Яндекс панорамы](/maps/ya_pano.md)
+  - [Панорамы](/maps/ya_pano.md)
 - Треки
   - [Настройки](/tracks/track-config.md)
   - [Создание и загрузка](/tracks/track-new.md)
