@@ -100,6 +100,36 @@
 	.badge-new { color: #1b5e20 !important; background-color: #e8f5e9 !important; border: 1px solid #c8e6c9 !important; }
 	.badge-fix { color: #b71c1c !important; background-color: #ffebee !important; border: 1px solid #ffcdd2 !important; }
 	.badge-upd { color: #0d47a1 !important; background-color: #e3f2fd !important; border: 1px solid #bbdefb !important; }
+	  /* ==================== УМНЫЙ СИНХРОНИЗАТОР ТАБУЛЯЦИИ ЧЕНДЖЛОГА ==================== */
+
+	/* 
+	  Селектор li:has(.badge-changelog)
+	  Он включает Flexbox-выравнивание СТРОГО для тех элементов списка, 
+	  внутри которых наш JS-скрипт уже создал цветную плашку.
+	  Все остальные списки на других страницах документации останутся нетронутыми!
+	*/
+	article ul li:has(.badge-changelog) {
+	    display: flex !important;
+	    align-items: flex-start !important;
+	    margin-bottom: 6px !important;
+	}
+	
+	/* Стили самого бейджа остаются фиксированными */
+	.badge-changelog {
+	    display: inline-block !important;
+	    flex-shrink: 0 !important; /* Текст не сможет сжать плашку */
+	    width: 45px !important;
+	    text-align: center !important;
+	    margin-right: 10px !important; /* Фиксированный шаг табуляции до текста */
+	    
+	    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif !important;
+	    font-size: 11px !important;
+	    font-weight: bold !important;
+	    padding: 2px 0 !important;        
+	    border-radius: 3px !important;
+	    text-transform: uppercase !important;
+	}
+
   </style>
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 </head>
