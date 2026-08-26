@@ -81,6 +81,20 @@
     h1 .anchor span{
       color: #42b983 !important;
     }*/
+    /* Красивые цветные плашки для авто-раскраски ченджлога */
+    .badge-changelog {
+        display: inline-block !important;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif !important;
+        font-size: 11px !important;
+        font-weight: bold !important;
+        padding: 2px 6px !important;
+        border-radius: 3px !important;
+        margin-right: 4px !important;
+        text-transform: uppercase !important;
+    }
+    .badge-new { color: #1b5e20 !important; background-color: #e8f5e9 !important; border: 1px solid #c8e6c9 !important; }
+    .badge-fix { color: #b71c1c !important; background-color: #ffebee !important; border: 1px solid #ffcdd2 !important; }
+    .badge-upd { color: #0d47a1 !important; background-color: #e3f2fd !important; border: 1px solid #bbdefb !important; }
   </style>
   <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 </head>
@@ -187,5 +201,34 @@
   <!-- https://github.com/fzankl/docsify-plugin-flexible-alerts -->
   <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
   <!--script src="https://cdn.jsdelivr.net/npm/docsify-updated@1/src/time-updater.min.js"></script-->
+  	<!-- Автономный скрипт раскраски тегов истории изменений Велокэта -->
+	<script>
+		// Используем встроенный в браузер MutationObserver. 
+		// Он следит за обновлением контента на странице и срабатывает автоматически при переходе по вкладкам меню!
+		var changelogObserver = new MutationObserver(function(mutations) {
+			document.querySelectorAll('code').forEach(function(el) {
+				var txt = el.textContent.trim();
+				if (txt === '[NEW]' || txt === 'NEW') {
+					el.className = 'badge-changelog badge-new';
+					el.textContent = 'NEW';
+				}
+				if (txt === '[FIX]' || txt === 'FIX') {
+					el.className = 'badge-changelog badge-fix';
+					el.textContent = 'FIX';
+				}
+				if (txt === '[UPD]' || txt === 'UPD') {
+					el.className = 'badge-changelog badge-upd';
+					el.textContent = 'UPD';
+				}
+			});
+		});
+
+		// Запускаем слежку за главным контейнером документации Docsify, как только страница загрузилась
+		window.addEventListener('DOMContentLoaded', function() {
+			var mainContent = document.getElementById('main') || document.body;
+			changelogObserver.observe(mainContent, { childList: true, subtree: true });
+		});
+	</script>
+
 </body>
 </html>
