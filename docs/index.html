@@ -201,32 +201,35 @@
   <!-- https://github.com/fzankl/docsify-plugin-flexible-alerts -->
   <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
   <!--script src="https://cdn.jsdelivr.net/npm/docsify-updated@1/src/time-updater.min.js"></script-->
-  	<!-- Автономный скрипт раскраски тегов истории изменений Велокэта -->
+
+	<!-- Безопасный скрипт авто-раскраски тегов Велокэта -->
 	<script>
-		// Используем встроенный в браузер MutationObserver. 
-		// Он следит за обновлением контента на странице и срабатывает автоматически при переходе по вкладкам меню!
-		var changelogObserver = new MutationObserver(function(mutations) {
-			document.querySelectorAll('code').forEach(function(el) {
-				var txt = el.textContent.trim();
-				if (txt === '[NEW]' || txt === 'NEW') {
-					el.className = 'badge-changelog badge-new';
-					el.textContent = 'NEW';
-				}
-				if (txt === '[FIX]' || txt === 'FIX') {
-					el.className = 'badge-changelog badge-fix';
-					el.textContent = 'FIX';
-				}
-				if (txt === '[UPD]' || txt === 'UPD') {
-					el.className = 'badge-changelog badge-upd';
-					el.textContent = 'UPD';
+		// Инициализируем массив плагинов, если Docsify еще не успел его создать
+		window.$docsify = window.$docsify || {};
+		window.$docsify.plugins = window.$docsify.plugins || [];
+
+		// Нативно пушим наш изолированный обработчик в Docsify.
+		// Он срабатывает строго ОДИН раз при каждой смене страницы, полностью исключая рекурсию и зависания!
+		window.$docsify.plugins.push(function(hook, vm) {
+			hook.doneEach(function() {
+				// Спокойно и без циклов находим все элементы <code> на отрендеренной странице
+				var codes = document.querySelectorAll('article code');
+				for (var i = 0; i < codes.length; i++) {
+					var el = codes[i];
+					var txt = el.textContent.trim();
+					
+					if (txt === '[NEW]' || txt === 'NEW') {
+						el.className = 'badge-changelog badge-new';
+						el.textContent = 'NEW';
+					} else if (txt === '[FIX]' || txt === 'FIX') {
+						el.className = 'badge-changelog badge-fix';
+						el.textContent = 'FIX';
+					} else if (txt === '[UPD]' || txt === 'UPD') {
+						el.className = 'badge-changelog badge-upd';
+						el.textContent = 'UPD';
+					}
 				}
 			});
-		});
-
-		// Запускаем слежку за главным контейнером документации Docsify, как только страница загрузилась
-		window.addEventListener('DOMContentLoaded', function() {
-			var mainContent = document.getElementById('main') || document.body;
-			changelogObserver.observe(mainContent, { childList: true, subtree: true });
 		});
 	</script>
 
