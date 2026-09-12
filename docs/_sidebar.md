@@ -21,6 +21,7 @@
   - [Оптимизатор](/tools/optimizer.md)
   - [Сервер высот](/tools/elevation.md)
   - [Маршрутизация](/tools/routing.md)
+  - [Ремаршрутизатор](/tools/rerouting.md)
   - [Статистика](/tools/stat.md)  
 - Маркеры
   - [Добавить/Изменить](markers/marker-add.md)
