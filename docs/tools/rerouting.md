@@ -79,7 +79,7 @@
 
 |выкл.|раскрыт|закрыт
 |----|----|----|
-| не отображается | ![Image200](../_media/reroute_tlegend-list.png) | ![Image200](../_media/reroute_tlegend-btn.png)
+| не отображается на карте | ![Image200](../_media/reroute_tlegend-list.png) | ![Image200](../_media/reroute_tlegend-btn.png)
 
 
 #### 3. Отображать повороты/направления на карте
